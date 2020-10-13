@@ -3,7 +3,7 @@ import React from 'react';
 import './Hero.css';
 
 const Hero = () => (
-  <section class="hero">
+  <section class="hero is-large">
     <div class="hero-body">
       <div class="container">
         <h1 class="title">Hero title</h1>

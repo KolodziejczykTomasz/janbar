@@ -1,0 +1,125 @@
+#about {
+  width: 100%;
+}
+
+#wrapperSectionAbout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#wrapperSectionAboutRight {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#realizations {
+  width: 100%;
+}
+
+#services {
+  color: white;
+  background-color: #383838;
+}
+
+#wrapperSectionServices {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#machine {
+  width: 100%;
+}
+
+.footer {
+  background-color: #383838;
+}
+
+#contactWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: white;
+  background-color: #383838;
+}
+
+#contactDescritpionsHeaderTitle {
+  color: white;
+  text-align: left;
+  font-weight: 700;
+  margin: 10px 0 10px 0;
+  font-size: 20px;
+}
+
+#contact {
+  background-color: #383838;
+}
+
+#contactMap {
+  display: block;
+  margin: 0 auto;
+}
+
+#description {
+  margin-bottom: 15px;
+  line-height: 26px;
+  font-size: 14px;
+  text-align: justify;
+  hyphens: auto;
+}
+
+#headerWrapper {
+  font-size: 44px;
+  color: #383838;
+  text-align: center;
+  font-weight: 700;
+  margin: 10px 0 50px 0;
+}
+
+#headerWrapperServices {
+  color: white;
+  text-align: center;
+  font-weight: 700;
+  margin: 10px 0 50px 0;
+  font-size: 44px;
+}
+
+#headerWrapperContact {
+  color: white;
+  text-align: left;
+  font-weight: 700;
+  margin: 10px 0 50px 0;
+  font-size: 44px;
+}
+
+#wrapperSectionServicesLeft {
+  padding: 0 15px 0 15px;
+}
+
+#wrapperSectionServicesRight {
+  padding: 0 20px 0 15px;
+}
+
+#subHeader {
+  color: white;
+  text-align: left;
+  font-weight: 700;
+  margin: 10px 0 20px 0;
+  font-size: 30px;
+}
+
+#descriptionFooter {
+  color: white;
+  text-align: left;
+  padding-left: 15px;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.section {
+  padding: 40px 0;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}

@@ -1,0 +1,23 @@
+.navbar {
+  height: auto; 
+  padding: 20px 0;
+}
+
+#navbar-item-photo{
+    display: block;
+    font-size: 44px;
+    line-height: 44px;
+}
+
+
+#navbar-item-photo {
+  display: block;
+  height: 70px;
+  padding-left: 20px;
+}
+
+
+.navbar-start{
+    text-transform: uppercase;
+    margin: 0 auto;
+}

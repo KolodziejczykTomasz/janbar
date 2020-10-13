@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import BrandLogo from "../assets/images/brand.jpg";
 
 import "./Navbar.css";
 
@@ -7,16 +8,16 @@ const Navbar = () => {
 
   return (
     <nav
-      className="navbar is-fixed-top"
+      className="navbar is-fixed-top is-transparent"
       role="navigation"
-      aria-label="main navigation"      
+      aria-label="main navigation"
     >
       <div className="navbar-brand">
-        <a className="navbar-item" href="https://bulma.io">
+        <a className="" href="https://janbar.netlify.app">
           <img
-            src="https://bulma.io/images/bulma-logo.png"
-            width="112"
-            height="28"
+            src={BrandLogo}
+            alt="Barnd logo"          
+            id="navbar-item-photo"
           />
         </a>
 
@@ -40,7 +41,11 @@ const Navbar = () => {
       >
         <div className="navbar-start">
           <a className="navbar-item">Home</a>
-          <a className="navbar-item">Documentation</a>
+          <a className="navbar-item">Nasza firma</a>
+          <a className="navbar-item">Realizacje</a>
+          <a className="navbar-item">Usługi</a>
+          <a className="navbar-item">Park maszynowy</a>
+          <a className="navbar-item">Kontakt</a>
         </div>
       </div>
     </nav>

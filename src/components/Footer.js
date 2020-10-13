@@ -3,12 +3,9 @@ import React from 'react';
 import './Footer.css';
 
 const Footer = () => (
-  <footer className="footer">
-    <div className="content has-text-centered">
-      <p>
-        <strong>Bulma</strong></p>
-    </div>
-  </footer>
+      <div id="copyright">          
+          <p>Prawa autorskie</p>
+        </div>  
 );
 
 export default Footer;
