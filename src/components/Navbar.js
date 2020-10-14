@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import BrandLogo from "../assets/images/brand.jpg";
 
 import "./Navbar.css";
@@ -13,15 +14,11 @@ const Navbar = () => {
       aria-label="main navigation"
     >
       <div className="navbar-brand">
-        <a className="" href="https://janbar.netlify.app">
-          <img
-            src={BrandLogo}
-            alt="Barnd logo"          
-            id="navbar-item-photo"
-          />
-        </a>
+        <Link to="/">
+          <img src={BrandLogo} alt="Barnd logo" id="navbar-item-photo" />
+        </Link>
 
-        <a
+        <Link
           role="button"
           className={`navbar-burger burger${isActive ? "is-active" : ""}`}
           aria-label="menu"
@@ -32,7 +29,7 @@ const Navbar = () => {
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
-        </a>
+        </Link>
       </div>
 
       <div
@@ -40,12 +37,12 @@ const Navbar = () => {
         className={`navbar-menu${isActive ? "is-active" : ""}`}
       >
         <div className="navbar-start">
-          <a className="navbar-item">Home</a>
-          <a className="navbar-item">Nasza firma</a>
-          <a className="navbar-item">Realizacje</a>
-          <a className="navbar-item">Usługi</a>
-          <a className="navbar-item">Park maszynowy</a>
-          <a className="navbar-item">Kontakt</a>
+          <Link className="navbar-item" id="linkItem">Home</Link>
+          <Link className="navbar-item" id="linkItem">Nasza firma</Link>
+          <Link className="navbar-item" id="linkItem">Realizacje</Link>
+          <Link className="navbar-item" id="linkItem">Usługi</Link>
+          <Link className="navbar-item" id="linkItem">Park maszynowy</Link>
+          <Link className="navbar-item" id="linkItem">Kontakt</Link>
         </div>
       </div>
     </nav>

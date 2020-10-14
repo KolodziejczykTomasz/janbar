@@ -3,3 +3,23 @@
   background-image: url("../assets/images/base.jpg");
   background-size: cover;
 }
+
+#title {
+  font-weight: 700;
+  font-size: 54px;
+}
+
+#subtitle {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+#white {
+  color: white;
+}
+#red {
+  color: #a44458;
+}
+#blue {
+  color: #5595ec;
+}
