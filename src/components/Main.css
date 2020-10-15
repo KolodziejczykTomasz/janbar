@@ -44,6 +44,7 @@
 #wrapperSectionrealizations {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin-bottom: 60px;
 }
 
 #wrapperSectionrealizationsLeft {
@@ -65,10 +66,12 @@
 #wrapperSectionServices {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin-bottom: 70px;
 }
 
 #machine {
   width: 100%;
+  margin-bottom: 60px;
 }
 
 #wrapperSectionMachine {
@@ -177,5 +180,5 @@
 
 .container {
   max-width: 1170px;
-  margin: 0 auto;
+  margin: 60px auto;
 }
