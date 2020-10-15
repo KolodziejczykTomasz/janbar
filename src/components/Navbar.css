@@ -12,7 +12,8 @@
 #navbar-item-photo {
   display: block;
   height: 70px;
-  padding-left: 20px;
+  margin-left: 20px;
+  border-radius: 150px;
 }
 
 .navbar-start {

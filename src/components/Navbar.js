@@ -37,12 +37,24 @@ const Navbar = () => {
         className={`navbar-menu${isActive ? "is-active" : ""}`}
       >
         <div className="navbar-start">
-          <Link className="navbar-item" id="linkItem">Home</Link>
-          <Link className="navbar-item" id="linkItem">Nasza firma</Link>
-          <Link className="navbar-item" id="linkItem">Realizacje</Link>
-          <Link className="navbar-item" id="linkItem">Usługi</Link>
-          <Link className="navbar-item" id="linkItem">Park maszynowy</Link>
-          <Link className="navbar-item" id="linkItem">Kontakt</Link>
+          <Link className="navbar-item is-focused" id="linkItem">
+            Home
+          </Link>
+          <Link className="navbar-item is-focused" id="linkItem">
+            Nasza firma
+          </Link>
+          <Link className="navbar-item is-focused" id="linkItem">
+            Realizacje
+          </Link>
+          <Link className="navbar-item is-focused" id="linkItem">
+            Usługi
+          </Link>
+          <Link className="navbar-item is-focused" id="linkItem">
+            Park maszynowy
+          </Link>
+          <Link className="navbar-item is-focused" id="linkItem">
+            Kontakt
+          </Link>
         </div>
       </div>
     </nav>

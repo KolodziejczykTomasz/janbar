@@ -1,5 +1,8 @@
 import React from "react";
-import koparka from '../assets/images/koparka.png';
+import koparka from "../assets/images/koparka.png";
+import cta from "../assets/images/cta.png";
+import Realizations from "../assets/images/realizations.jpg";
+import machine from "../assets/images/machine.jpg";
 import Iframe from "react-iframe";
 
 import "./Main.css";
@@ -7,11 +10,11 @@ import "./Main.css";
 const Main = () => (
   <>
     <section class="section" id="about">
-      <div className="container" >
-        <div id="headerWrapper">Nasz firma</div>
+      <div className="container">
+        <div id="headerWrapper">Nasza firma</div>
         <div id="wrapperSectionAbout">
           <div id="wrapperSectionAboutLeft">
-            <p id="description">
+            <p id="description" className="greyText">
               Aby zyskać wiarygodność oraz zainteresować Państwa firmą "JANBAR"
               pragniemy przedstawić jej ogólną charakterystykę. Liczymy, że
               dzięki temu zyskamy Państwa zaufanie i nie będą się już Państwo
@@ -20,13 +23,13 @@ const Main = () => (
               kierowaniem do nas zaproszeń o wzięcie udziału w przetargach bądź
               konkursach ofert na realizację robót ziemnych.
             </p>
-            <p id="description">
+            <p id="description" className="greyText">
               Firma "JANBAR" jest firmą młodą, ponieważ działa na rynku dopiero
               od 1997 roku, jednak zyskała już zaufanie i szacunek wielu
               klientów - o czym mogą się państwo przekonać przeglądając nasze
               referencje.
             </p>
-            <p id="description">
+            <p id="description" className="greyText">
               Założyli ją dwaj panowie Waldemar Baran i Mirosław Jankowski (w
               formie spółki cywilnej), współpracujący już ze sobą od kilku lat.
               Początkowo zajmowali się oni mniejszymi przedsięwzięciami (m.in.
@@ -34,7 +37,7 @@ const Main = () => (
               wyspecjalizowana w realizacji kompleksowych robót ziemnych
               (dokładna ofertę znajda Państwo w rozdziale "Usługi").
             </p>
-            <p id="description">
+            <p id="description" className="greyText">
               Początkowo nasza firma nie posiadała oddzielnego biura, wszystkie
               sprawy administracyjne były prowadzone w mieszkaniach wspólników.
               Jednak firma szybko udowodniła swoją rzetelność i zyskała zaufanie
@@ -44,7 +47,7 @@ const Main = () => (
               adoptowane jako biuro oraz magazyny, a teren został wykorzystany
               jako baza sprzętu.
             </p>
-            <p id="description">
+            <p id="description" className="greyText">
               Przez cztery lata działalność na rynku budowlanym firma "JANBAR"
               zdołała już skompletować doskonały zespół pracowników, który
               sprawdził się przy wielu rodzajach prac. Na życzenie Państwa
@@ -57,69 +60,82 @@ const Main = () => (
         </div>
       </div>
     </section>
+    <section class="section" id="calltoaction">
+      <div id="calltoactionWrapper">
+        <img src={cta} alt="Photo_breake" />
+      </div>
+    </section>
     <section class="section" id="realizations">
       <div className="container">
-        <div>
-          <p id="headerWrapper">Realizacje</p>
-          <p id="description">
-            Przedsiębiorstwo "JAN&BAR" posiada niezbędne doświadczenie w
-            realizacji kompleksowych robót ziemnych o czym świadczą, w naszym
-            przekonaniu, obiekty już zrealizowane.
-          </p>
-          <p id="description">
-            W ciągu ostatnich lat firma realizowała następujące zadania:
-          </p>
-          <ul>
-            <li id="listItem">
-              - Wodociąg Babiak-Kolonia 3 600 mb, Urząd Gminy Lidzbark Warmiński
-            </li>
-            <li id="listItem">
-              - Wodociąg Galiny-Ciemna Wola - Kosy-Wgoryty - Pergozy-Molwity -
-              Wajsnory-Wojtkowo 10 200 mb, Urząd Gminy Bartoszyce
-            </li>
-            <li id="listItem">
-              - Wodociąg i remont SUW Runowo 7 800 mb, Urząd Gminy Lidzbark
-              Warmiński
-            </li>
-            <li id="listItem">
-              - Wodociąg Koniewo-Koniewo PGR 5 600 mb, Urząd Gminy Lidzbark
-              Warmiński
-            </li>
-            <li id="listItem">
-              - Modernizacja SUW Redy , 03.09-07.12.2001, Urząd Gminy Lidzbark
-              Warmiński
-            </li>
-            <li id="listItem">
-              - Wodociąg Koniewo-Żytowo-Budniki 7 600 mb, Urząd Gminy Lidzbark
-              Warmiński
-            </li>
-            <li id="listItem">
-              - Modernizacja SUW w Mojtynach, Urząd Gminy Biskupiec
-            </li>
-            <li id="listItem">- Wodociąg Studzieniec, Urząd Gminy Korsze </li>
-            <li id="listItem">
-              - Wodociąg Rzeck-Kolonia 6 000 mb, Urząd Gminy Biskupiec
-            </li>
-            <li id="listItem">
-              - Wodociąg Żardeniki - Miejska Wieś 9 200 mb, Urząd Gminy
-              Jeziorany SAPARD
-            </li>
-            <li id="listItem">
-              - Kanalizacja sanitarna Małszewko-Budy-oczyszczalnia ścieków
-              Dżwierzuty 5 200 mb, Urząd Gminy Dzwierzuty
-            </li>
-            <li id="listItem">
-              - Kanalizacja sanitarna Wójtówko-Jeziorany-IV etap 1 900 mb, Urząd
-              Gminy Jeziorany
-            </li>
-            <li id="listItem">
-              - Wodociąg Frączki 4 600 mb, Urząd Gminy Dywity
-            </li>
-            <li id="listItem">
-              - Wodociąg Zerbuń 18 000 mb, Urząd Gminy Jeziorany Wodociąg
-              Pręgowo- Wólka 2100 mb, Urząd Gminy Kętrzyn
-            </li>
-          </ul>
+        <p id="headerWrapper">Realizacje</p>
+        <div id="wrapperSectionrealizations">
+          <div id="wrapperSectionrealizationsLeft">
+            <img src={Realizations} alt="Realizations" />
+          </div>
+          <div id="wrapperSectionrealizationsRight">
+            <p id="description">
+              Przedsiębiorstwo "JAN&BAR" posiada niezbędne doświadczenie w
+              realizacji kompleksowych robót ziemnych o czym świadczą, w naszym
+              przekonaniu, obiekty już zrealizowane.
+            </p>
+            <p id="description" className="greyText">
+              W ciągu ostatnich lat firma realizowała następujące zadania:
+            </p>
+            <ul>
+              <li id="listItem" className="greyText">
+                - Wodociąg Babiak-Kolonia 3 600 mb, Urząd Gminy Lidzbark
+                Warmiński
+              </li>
+              <li id="listItem" className="greyText">
+                - Wodociąg Galiny-Ciemna Wola - Kosy-Wgoryty - Pergozy-Molwity -
+                Wajsnory-Wojtkowo 10 200 mb, Urząd Gminy Bartoszyce
+              </li>
+              <li id="listItem" className="greyText">
+                - Wodociąg i remont SUW Runowo 7 800 mb, Urząd Gminy Lidzbark
+                Warmiński
+              </li>
+              <li id="listItem" className="greyText">
+                - Wodociąg Koniewo-Koniewo PGR 5 600 mb, Urząd Gminy Lidzbark
+                Warmiński
+              </li>
+              <li id="listItem" className="greyText">
+                - Modernizacja SUW Redy , 03.09-07.12.2001, Urząd Gminy Lidzbark
+                Warmiński
+              </li>
+              <li id="listItem" className="greyText">
+                - Wodociąg Koniewo-Żytowo-Budniki 7 600 mb, Urząd Gminy Lidzbark
+                Warmiński
+              </li>
+              <li id="listItem" className="greyText">
+                - Modernizacja SUW w Mojtynach, Urząd Gminy Biskupiec
+              </li>
+              <li id="listItem" className="greyText">
+                - Wodociąg Studzieniec, Urząd Gminy Korsze
+              </li>
+              <li id="listItem" className="greyText">
+                - Wodociąg Rzeck-Kolonia 6 000 mb, Urząd Gminy Biskupiec
+              </li>
+              <li id="listItem" className="greyText">
+                - Wodociąg Żardeniki - Miejska Wieś 9 200 mb, Urząd Gminy
+                Jeziorany SAPARD
+              </li>
+              <li id="listItem" className="greyText">
+                - Kanalizacja sanitarna Małszewko-Budy-oczyszczalnia ścieków
+                Dżwierzuty 5 200 mb, Urząd Gminy Dzwierzuty
+              </li>
+              <li id="listItem" className="greyText">
+                - Kanalizacja sanitarna Wójtówko-Jeziorany-IV etap 1 900 mb,
+                Urząd Gminy Jeziorany
+              </li>
+              <li id="listItem" className="greyText">
+                - Wodociąg Frączki 4 600 mb, Urząd Gminy Dywity
+              </li>
+              <li id="listItem" className="greyText">
+                - Wodociąg Zerbuń 18 000 mb, Urząd Gminy Jeziorany Wodociąg
+                Pręgowo- Wólka 2100 mb, Urząd Gminy Kętrzyn
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
@@ -147,7 +163,6 @@ const Main = () => (
               <li id="listItem">- montaż przydomowych oczyszczalni ścieków</li>
             </ul>
           </div>
-
           <div id="wrapperSectionServicesRight">
             <p id="subHeader">Wynajem sprzętu:</p>
             <p id="wrapperSectionServicesDescription">
@@ -179,37 +194,48 @@ const Main = () => (
     </section>
     <section class="section" id="machine">
       <div className="container">
-        <div>
-          <p id="headerWrapper">Park maszynowy</p>
-          <p id="description">
-            Firma JANBAR jest młodą firmą, ale szybko się rozwijającą. Naszą
-            pierwszą koparką była koparka kołowa firmy FAUN, kupiona w pierwszym
-            roku działalności firmy.W kolejnych latach działalności nasza baza
-            sprzętu szybko się rozrastała.
-          </p>
-          <p id="description">
-            W obecnie chwili dysponujemy następującymi maszynami:
-          </p>
-          <ul>
-            <li id="listItem">
-              - koparka gąsienicowa ATLAS 17 02 , pojemność łyżki 1,2 m3
-            </li>
-            <li id="listItem">
-              - koparka gąsienicowa O&K RH 5 PLUS , pojemność łyżki 0,8 m3
-            </li>
-            <li id="listItem">
-              - koparka kołowa FAUN 10-13, pojemność łyżki 0,8 m3
-            </li>
-            <li id="listItem">
-              - koparka gąsienicowa ATLAS 17 04 HD, pojemność łyżki 0,8 m3
-            </li>
-            <li id="listItem">
-              - pojazd specjalny MAN z zabudowaniem bramowo-łańcuchowym
-            </li>
-            <li id="listItem">- walec wibracyjny </li>
-            <li id="listItem">- samojezdny BOMAG </li>
-            <li id="listItem">- samochody ciężarowe MERCEDES 3,5 t i 6,9 t</li>
-          </ul>
+        <p id="headerWrapper">Park maszynowy</p>
+        <div id="wrapperSectionMachine">
+          <div id="wrapperSectionMachineLeft">
+            <p id="description">
+              Firma JANBAR jest młodą firmą, ale szybko się rozwijającą. Naszą
+              pierwszą koparką była koparka kołowa firmy FAUN, kupiona w
+              pierwszym roku działalności firmy.W kolejnych latach działalności
+              nasza baza sprzętu szybko się rozrastała.
+            </p>
+            <p id="description" className="greyText">
+              W obecnie chwili dysponujemy następującymi maszynami:
+            </p>
+            <ul>
+              <li id="listItem" className="greyText">
+                - koparka gąsienicowa ATLAS 17 02 , pojemność łyżki 1,2 m3
+              </li>
+              <li id="listItem" className="greyText">
+                - koparka gąsienicowa O&K RH 5 PLUS , pojemność łyżki 0,8 m3
+              </li>
+              <li id="listItem" className="greyText">
+                - koparka kołowa FAUN 10-13, pojemność łyżki 0,8 m3
+              </li>
+              <li id="listItem" className="greyText">
+                - koparka gąsienicowa ATLAS 17 04 HD, pojemność łyżki 0,8 m3
+              </li>
+              <li id="listItem" className="greyText">
+                - pojazd specjalny MAN z zabudowaniem bramowo-łańcuchowym
+              </li>
+              <li id="listItem" className="greyText">
+                - walec wibracyjny
+              </li>
+              <li id="listItem" className="greyText">
+                - samojezdny BOMAG
+              </li>
+              <li id="listItem" className="greyText">
+                - samochody ciężarowe MERCEDES 3,5 t i 6,9 t
+              </li>
+            </ul>
+          </div>
+          <div id="wrapperSectionMachineRight">
+            <img src={machine} alt="machine" />
+          </div>
         </div>
       </div>
     </section>

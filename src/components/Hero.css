@@ -16,10 +16,13 @@
 
 #white {
   color: white;
+  letter-spacing: -5px;
 }
 #red {
   color: #a44458;
+  letter-spacing: -5px;
 }
 #blue {
   color: #5595ec;
+  letter-spacing: -5px;
 }
