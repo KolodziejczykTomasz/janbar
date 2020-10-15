@@ -22,7 +22,7 @@
 }
 
 #linkItem {
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid transparent;
   letter-spacing: 0.5px;
   font-size: 17px;
   font-weight: 600;

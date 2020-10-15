@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import useWindowScrollPosition from "@rehooks/window-scroll-position";
 import BrandLogo from "../assets/images/brand.jpg";
 
 import "./Navbar.css";
@@ -7,11 +8,32 @@ import "./Navbar.css";
 const Navbar = () => {
   const [isActive, setisActive] = useState(false);
 
+const [change, setChange] = useState(false);
+const changePosition = 700;
+
+let position = useWindowScrollPosition();
+
+
+if (position.y > changePosition && !change) {
+  setChange(true);
+}
+
+if (position.y <= changePosition && change) {
+  setChange(false);
+}
+
+let style = {
+  backgroundColor: change ? "white" : "transparent",
+  transition: "400ms ease",
+  color: 'white',
+};
+
   return (
     <nav
-      className="navbar is-fixed-top is-transparent"
+      className="navbar is-fixed-top"
       role="navigation"
       aria-label="main navigation"
+      style={style}
     >
       <div className="navbar-brand">
         <Link to="/">
