@@ -35,3 +35,41 @@
   color: #a44458;
   border-bottom: 2px solid #a44458;
 }
+
+@media only screen and (max-width: 600px) {
+  #linkItem {
+    background-color: #383838;
+    color: white;
+    margin-bottom: 0px;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  #linkItem {
+    background-color: #383838;
+    color: white;
+    margin-bottom: 0px;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #linkItem {
+    border-bottom: 2px solid transparent;
+    background-color:transparent;
+    letter-spacing: 0.5px;
+    font-size: 17px;
+    font-weight: 600;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    transition: 0.2s;
+    margin-right: 15px;
+    color: #383838;
+  }
+  #linkItem:hover {
+  color: #a44458;
+  border-bottom: 2px solid #a44458;
+}
+
+}

@@ -258,7 +258,7 @@ const Main = () => (
           <Iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2337.7243726186925!2d20.565618951407433!3d54.13181198005378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e2f5ba9470155b%3A0xbac7839b1267fb51!2sJanbar%20s.c.%20PU.%20Baran%20W.%2C%20Jankowski%20M.!5e0!3m2!1spl!2spl!4v1602347623450!5m2!1spl!2spl"
             height="400"
-            width="600"
+            width="100%"
             frameborder="0"
             allowfullscreen=""
             aria-hidden="false"

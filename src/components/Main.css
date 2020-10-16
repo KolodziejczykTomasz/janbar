@@ -1,5 +1,6 @@
 #about {
-  width: 100%;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .greyText {
@@ -8,7 +9,7 @@
 
 #wrapperSectionAbout {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 0.6fr 0.4fr;
 }
 
 #wrapperSectionAboutRight {
@@ -38,12 +39,13 @@
 }
 
 #realizations {
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
 }
 
 #wrapperSectionrealizations {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 0.4fr 0.6fr;
   margin-bottom: 60px;
 }
 
@@ -67,16 +69,18 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-bottom: 70px;
+  width: 100%;
+  margin: 60px auto;
 }
 
 #machine {
-  width: 100%;
+  margin: 0 auto;
   margin-bottom: 60px;
 }
 
 #wrapperSectionMachine {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 0.6fr 0.4fr;
 }
 
 #wrapperSectionMachineLeft {
@@ -113,6 +117,15 @@
   background-color: #383838;
 }
 
+#contactWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#contactWrapper {
+  margin: 20px 20px;
+}
+
 #contactMap {
   display: block;
   margin: 0 auto;
@@ -124,6 +137,7 @@
   font-size: 14px;
   text-align: justify;
   hyphens: auto;
+  padding: 0 20px;
 }
 
 #headerWrapper {
@@ -181,4 +195,263 @@
 .container {
   max-width: 1170px;
   margin: 60px auto;
+}
+
+ul {
+  line-height: 26px;
+  font-size: 14px;
+}
+
+#listItem {
+  padding-left: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  #about {
+    width: 100%;
+  }
+  #wrapperSectionAbout {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  #realizations {
+    width: 100%;
+  }
+
+  #wrapperSectionrealizations {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 60px;
+  }
+  #wrapperSectionrealizationsLeft {
+    margin-bottom: 60px;
+  }
+  #wrapperSectionServices {
+    grid-template-columns: 1fr;
+  }
+  #wrapperSectionServicesLeft {
+    margin-bottom: 60px;
+  }
+
+  #wrapperSectionMachine {
+    grid-template-columns: 1fr;
+  }
+  #wrapperSectionMachineLeft {
+    margin-bottom: 60px;
+  }
+
+  #headerWrapperContact {
+    text-align: center;
+  }
+  #contactWrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  #contactDescritpions {
+    margin-bottom: 60px;
+  }
+  #contactMap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 600px) {
+  #about {
+    width: 100%;
+  }
+  #wrapperSectionAbout {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  #realizations {
+    width: 100%;
+  }
+  #realizations {
+    width: 100%;
+  }
+
+  #wrapperSectionrealizations {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 60px;
+  }
+  #wrapperSectionrealizationsLeft {
+    margin-bottom: 60px;
+  }
+  #wrapperSectionServices {
+    grid-template-columns: 1fr;
+  }
+  #wrapperSectionServicesLeft {
+    margin-bottom: 60px;
+  }
+
+  #wrapperSectionMachine {
+    grid-template-columns: 1fr;
+  }
+  #wrapperSectionMachineLeft {
+    margin-bottom: 60px;
+  }
+
+  #headerWrapperContact {
+    text-align: center;
+  }
+  #contactWrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  #contactDescritpions {
+    margin-bottom: 60px;
+  }
+  #contactMap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 550px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #about {
+    width: 100%;
+  }
+  #wrapperSectionAbout {
+    display: grid;
+    grid-template-columns: 0.6fr 0.4fr;
+  }
+  #realizations {
+    width: 100%;
+  }
+  #realizations {
+    width: 100%;
+  }
+
+  #wrapperSectionrealizations {
+    display: grid;
+    grid-template-columns: 0.4fr 0.6fr;
+    margin-bottom: 60px;
+  }
+  #wrapperSectionrealizationsLeft {
+    margin-bottom: 60px;
+  }
+  #wrapperSectionServices {
+    grid-template-columns: 1fr 1fr;
+  }
+  #wrapperSectionServicesLeft {
+    margin-bottom: 60px;
+  }
+
+  #wrapperSectionMachine {
+    grid-template-columns: 1fr 1fr;
+  }
+  #wrapperSectionMachineLeft {
+    margin-bottom: 60px;
+  }
+
+  #headerWrapperContact {
+    text-align: left;
+  }
+  #contactWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  #contactDescritpions {
+    margin-bottom: 60px;
+  }
+  #contactMap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #about {
+    width: 100%;
+  }
+  #wrapperSectionAbout {
+    display: grid;
+    grid-template-columns: 0.6fr 0.4fr;
+  }
+  #realizations {
+    width: 100%;
+  }
+  #realizations {
+    width: 100%;
+  }
+
+  #wrapperSectionrealizations {
+    display: grid;
+    grid-template-columns: 0.4fr 0.6fr;
+    margin-bottom: 60px;
+  }
+  #wrapperSectionrealizationsLeft {
+    margin-bottom: 60px;
+  }
+  #wrapperSectionServices {
+    grid-template-columns: 1fr 1fr;
+  }
+  #wrapperSectionServicesLeft {
+    margin-bottom: 60px;
+  }
+
+  #wrapperSectionMachine {
+    grid-template-columns: 1fr 1fr;
+  }
+  #wrapperSectionMachineLeft {
+    margin-bottom: 60px;
+  }
+
+  #headerWrapperContact {
+    text-align: left;
+  }
+  #contactWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  #contactDescritpions {
+    margin-bottom: 60px;
+  }
+  #contactMap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #about {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  #realizations {
+    width: 80%;
+    margin: 0 auto;
+  }
+  #contactMap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 800px;
+  }
+  #contactWrapper {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 1201px) {
+  #calltoactionWrapper{
+    max-width: 1250px;
+    margin: 0 auto;
+  }
+  #contactWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1250px;
+  }
+  #contactMap {
+    max-width: 600px;
+  }
 }
