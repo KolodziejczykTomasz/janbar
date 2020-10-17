@@ -1,6 +1,6 @@
 #about {
   width: 80%;
-  margin: 0 auto;
+  margin: 0 auto; 
 }
 
 .greyText {
@@ -98,12 +98,18 @@
   background-color: #383838;
 }
 
+#contact {
+  background-color: #383838;
+}
+
 #contactWrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  padding: 80px 20px;  
   color: white;
   background-color: #383838;
 }
+
 
 #contactDescritpionsHeaderTitle {
   color: white;
@@ -113,23 +119,13 @@
   font-size: 20px;
 }
 
-#contact {
-  background-color: #383838;
-}
-
-#contactWrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-#contactWrapper {
-  margin: 20px 20px;
-}
 
 #contactMap {
   display: block;
   margin: 0 auto;
 }
+
+
 
 #description {
   margin-bottom: 15px;
@@ -207,8 +203,12 @@ ul {
 }
 
 @media only screen and (max-width: 600px) {
+     #home {
+    padding-top: 1px;  
+  }
   #about {
     width: 100%;
+    padding-top: 95px;  
   }
   #wrapperSectionAbout {
     display: grid;
@@ -216,8 +216,14 @@ ul {
   }
   #realizations {
     width: 100%;
+    padding-top: 95px;  
   }
-
+  #services{
+    padding-top: 95px;  
+  }
+  #machine {
+    padding-top: 90px;  
+  }
   #wrapperSectionrealizations {
     display: grid;
     grid-template-columns: 1fr;
@@ -257,8 +263,12 @@ ul {
   }
 }
 @media only screen and (min-width: 600px) {
+     #home {
+    padding-top: 1px;  
+  }
   #about {
     width: 100%;
+    padding-top: 95px;  
   }
   #wrapperSectionAbout {
     display: grid;
@@ -266,11 +276,15 @@ ul {
   }
   #realizations {
     width: 100%;
-  }
-  #realizations {
-    width: 100%;
+    padding-top: 95px;  
   }
 
+  #services{
+    padding-top: 95px;  
+  }
+  #machine {
+    padding-top: 90px;  
+  }
   #wrapperSectionrealizations {
     display: grid;
     grid-template-columns: 1fr;
@@ -312,8 +326,12 @@ ul {
 }
 
 @media only screen and (min-width: 992px) {
+     #home {
+    padding-top: 1px;  
+  }
   #about {
     width: 100%;
+    padding-top: 95px;  
   }
   #wrapperSectionAbout {
     display: grid;
@@ -321,11 +339,15 @@ ul {
   }
   #realizations {
     width: 100%;
-  }
-  #realizations {
-    width: 100%;
+    padding-top: 95px;  
   }
 
+  #services{
+    padding-top: 95px;  
+  }
+  #machine {
+    padding-top: 90px;  
+  }
   #wrapperSectionrealizations {
     display: grid;
     grid-template-columns: 0.4fr 0.6fr;
@@ -367,7 +389,11 @@ ul {
 }
 
 @media only screen and (min-width: 1024px) {
+     #home {
+    padding-top: 1px;  
+  }
   #about {
+    padding-top: 95px;  
     width: 100%;
   }
   #wrapperSectionAbout {
@@ -375,9 +401,7 @@ ul {
     grid-template-columns: 0.6fr 0.4fr;
   }
   #realizations {
-    width: 100%;
-  }
-  #realizations {
+    padding-top: 95px;  
     width: 100%;
   }
 
@@ -419,16 +443,34 @@ ul {
     justify-content: center;
     width: 400px;
   }
+    #services{
+    padding-top: 95px;  
+  }
+  #machine {
+    padding-top: 90px;  
+  }
 }
 @media only screen and (min-width: 1200px) {
+   #home {
+    padding-top: 1px;  
+  }
+
   #about {
     width: 80%;
-    margin: 0 auto;
+    margin: 0 auto;  
+    padding-top: 90px;  
   }
 
   #realizations {
     width: 80%;
     margin: 0 auto;
+    padding-top: 90px;  
+  }
+  #services{
+    padding-top: 95px;  
+  }
+  #machine {
+    padding-top: 90px;  
   }
   #contactMap {
     display: flex;
@@ -437,7 +479,7 @@ ul {
     width: 800px;
   }
   #contactWrapper {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
   }
 }
@@ -453,5 +495,8 @@ ul {
   }
   #contactMap {
     max-width: 600px;
+  }
+  #contactWrapper {
+    width: 100%;    
   }
 }
