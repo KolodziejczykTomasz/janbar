@@ -13,26 +13,29 @@ import "./Hero.css";
 import "./Navbar.css";
 
 const Main = () => {
- const [isActive, setisActive] = useState(false);
+  const [isActive, setisActive] = useState(false);
 
- const [change, setChange] = useState(false);
- const changePosition = 700;
+  const handleMenuToggle = e => { 
+  setisActive(!isActive);
+}
+  const [change, setChange] = useState(false);
+  const changePosition = 700;
 
- let position = useWindowScrollPosition();
+  let position = useWindowScrollPosition();
 
- if (position.y > changePosition && !change) {
-   setChange(true);
- }
+  if (position.y > changePosition && !change) {
+    setChange(true);
+  }
 
- if (position.y <= changePosition && change) {
-   setChange(false);
- }
+  if (position.y <= changePosition && change) {
+    setChange(false);
+  }
 
- let style = {
-   backgroundColor: change ? "white" : "transparent",
-   transition: "400ms ease",
-   color: "white",
- };
+  let style = {
+    backgroundColor: change ? "white" : "transparent",
+    transition: "400ms ease",
+    color: "white",
+  };
   return (
     <div className="body" id="home">
       <nav
@@ -52,7 +55,7 @@ const Main = () => {
             aria-label="menu"
             aria-expanded="false"
             data-target="navbarBasicExample"
-            onClick={() => setisActive(!isActive)}
+            onClick={handleMenuToggle}
           >
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
@@ -63,8 +66,13 @@ const Main = () => {
         <div
           id="navbarBasicExample"
           className={`navbar-menu${isActive ? "is-active" : ""}`}
+          style={{ flexGrow: 1, justifyContent: "center" }}
         >
-          <div className="navbar-start">
+          <div
+            className="navbar-start"
+            style={{ flexGrow: 1, justifyContent: "center" }}
+            onClick={handleMenuToggle}
+          >
             <a className="navbar-item is-focused" id="linkItem" href="#home">
               Home
             </a>
@@ -369,5 +377,6 @@ const Main = () => {
         </div>
       </section>
     </div>
-  );};
+  );
+};
 export default Main;

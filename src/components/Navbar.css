@@ -31,9 +31,20 @@
   transition: 0.2s;
   margin-right: 15px;
 }
+
 #linkItem:hover {
   color: #a44458;
   border-bottom: 2px solid #a44458;
+}
+
+#linkItem:focus {
+  color: blue;
+  border-bottom: 2px solid blue;
+}
+
+#linkItem.is-activeItem{
+  color: green;
+  border-bottom: 2px solid green;
 }
 
 @media only screen and (max-width: 600px) {
