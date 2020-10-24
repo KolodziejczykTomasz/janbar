@@ -14,7 +14,9 @@ const Footer = () => (
         </p>
       </div>
       <div>
-        <p id="widgetBottomRight"><span id="greyText">Created by ATOM</span></p>
+        <p id="widgetBottomRight">
+          <span id="greyText">Created by NetArt</span>
+        </p>
       </div>
     </div>
   </div>
